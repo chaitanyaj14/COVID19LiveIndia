@@ -1,0 +1,191 @@
+[
+    {
+        "S. No.": "1",
+        "name": "Andhra Pradesh",
+        "infected": "23",
+        "Cured\/Discharged\/Migrated": "1",
+        "Death": "0"
+    },
+    {
+        "S. No.": "2",
+        "name": "Andaman and Nicobar Islands",
+        "infected": "9",
+        "Cured\/Discharged\/Migrated": "0",
+        "Death": "0"
+    },
+    {
+        "S. No.": "3",
+        "name": "Bihar",
+        "infected": "15",
+        "Cured\/Discharged\/Migrated": "0",
+        "Death": "1"
+    },
+    {
+        "S. No.": "4",
+        "name": "Chandigarh",
+        "infected": "8",
+        "Cured\/Discharged\/Migrated": "0",
+        "Death": "0"
+    },
+    {
+        "S. No.": "5",
+        "name": "Chhattisgarh",
+        "infected": "7",
+        "Cured\/Discharged\/Migrated": "0",
+        "Death": "0"
+    },
+    {
+        "S. No.": "6",
+        "name": "Delhi",
+        "infected": "87",
+        "Cured\/Discharged\/Migrated": "6",
+        "Death": "2"
+    },
+    {
+        "S. No.": "7",
+        "name": "Goa",
+        "infected": "5",
+        "Cured\/Discharged\/Migrated": "0",
+        "Death": "0"
+    },
+    {
+        "S. No.": "8",
+        "name": "Gujarat",
+        "infected": "69",
+        "Cured\/Discharged\/Migrated": "1",
+        "Death": "6"
+    },
+    {
+        "S. No.": "9",
+        "name": "Haryana",
+        "infected": "36",
+        "Cured\/Discharged\/Migrated": "18",
+        "Death": "0"
+    },
+    {
+        "S. No.": "10",
+        "name": "Himachal Pradesh",
+        "infected": "3",
+        "Cured\/Discharged\/Migrated": "0",
+        "Death": "1"
+    },
+    {
+        "S. No.": "11",
+        "name": "Jammu and Kashmir",
+        "infected": "48",
+        "Cured\/Discharged\/Migrated": "2",
+        "Death": "2"
+    },
+    {
+        "S. No.": "12",
+        "name": "Karnataka",
+        "infected": "83",
+        "Cured\/Discharged\/Migrated": "5",
+        "Death": "3"
+    },
+    {
+        "S. No.": "13",
+        "name": "Kerala",
+        "infected": "202",
+        "Cured\/Discharged\/Migrated": "19",
+        "Death": "1"
+    },
+    {
+        "S. No.": "14",
+        "name": "Ladakh",
+        "infected": "13",
+        "Cured\/Discharged\/Migrated": "3",
+        "Death": "0"
+    },
+    {
+        "S. No.": "15",
+        "name": "Madhya Pradesh",
+        "infected": "47",
+        "Cured\/Discharged\/Migrated": "0",
+        "Death": "3"
+    },
+    {
+        "S. No.": "16",
+        "name": "Maharashtra",
+        "infected": "198",
+        "Cured\/Discharged\/Migrated": "25",
+        "Death": "8"
+    },
+    {
+        "S. No.": "17",
+        "name": "Manipur",
+        "infected": "1",
+        "Cured\/Discharged\/Migrated": "0",
+        "Death": "0"
+    },
+    {
+        "S. No.": "18",
+        "name": "Mizoram",
+        "infected": "1",
+        "Cured\/Discharged\/Migrated": "0",
+        "Death": "0"
+    },
+    {
+        "S. No.": "19",
+        "name": "Odisha",
+        "infected": "3",
+        "Cured\/Discharged\/Migrated": "0",
+        "Death": "0"
+    },
+    {
+        "S. No.": "20",
+        "name": "Puducherry",
+        "infected": "1",
+        "Cured\/Discharged\/Migrated": "0",
+        "Death": "0"
+    },
+    {
+        "S. No.": "21",
+        "name": "Punjab",
+        "infected": "38",
+        "Cured\/Discharged\/Migrated": "1",
+        "Death": "1"
+    },
+    {
+        "S. No.": "22",
+        "name": "Rajasthan",
+        "infected": "59",
+        "Cured\/Discharged\/Migrated": "3",
+        "Death": "0"
+    },
+    {
+        "S. No.": "23",
+        "name": "Tamil Nadu",
+        "infected": "67",
+        "Cured\/Discharged\/Migrated": "4",
+        "Death": "1"
+    },
+    {
+        "S. No.": "24",
+        "name": "Telengana",
+        "infected": "71",
+        "Cured\/Discharged\/Migrated": "1",
+        "Death": "1"
+    },
+    {
+        "S. No.": "25",
+        "name": "Uttarakhand",
+        "infected": "7",
+        "Cured\/Discharged\/Migrated": "2",
+        "Death": "0"
+    },
+    {
+        "S. No.": "26",
+        "name": "Uttar Pradesh",
+        "infected": "82",
+        "Cured\/Discharged\/Migrated": "11",
+        "Death": "0"
+    },
+    {
+        "S. No.": "27",
+        "name": "West Bengal",
+        "infected": "22",
+        "Cured\/Discharged\/Migrated": "0",
+        "Death": "2"
+    }
+]

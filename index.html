@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>COVID - 19 India</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      width: 70vw;
+      height: 80vh;
+    }
+  </style>
+  <style>
+    #menu {
+      position: absolute;
+      background: #fff;
+      padding: 10px;
+      font-family: 'Open Sans', sans-serif;
+    }
+  </style>
+
+  <script>
+    window.onload = function() {
+    
+    var dataPoints = [];
+    
+    var chart = new CanvasJS.Chart("chartContainer", {
+      title: {
+        text: "State Wise Distribution"
+      },
+      data: [{
+        type: "pie",
+        indexLabel: "{label}, {y}",
+        dataPoints: dataPoints
+      }]
+    });
+    
+    function addData(data) {
+      for (var i = 0; i < data.length; i++) {
+        dataPoints.push({
+          label: data[i].name,
+          y: Number(data[i].infected)
+            });
+            console.log(dataPoints[i])
+      }
+      chart.render();
+    
+    }
+    
+    $.getJSON("/piechart.json", addData);
+    
+    }
+    </script>
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">COVID - 19 India</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#status">Live Status</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#analysis">Analysis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#data">Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+      <h1>Corona Virus (COVID - 19) India </h1>
+      <p class="lead">Live Status</p>
+      <p style="color:white;"><a href="https://www.mygov.in/covid-19" style="color:white;">Government of India Official
+          Website</a></p>
+    </div>
+  </header>
+
+  <section id="status">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Live Status As On: <span id="datetime"></span></h2>
+          <div id='map'></div>
+          <div id="menu">
+            <input id="streets-v11" type="radio" name="rtoggle" value="streets" checked="checked" />
+            <label for="streets">Streets</label>
+            <input id="light-v10" type="radio" name="rtoggle" value="light" />
+            <label for="light">Light</label>
+            <input id="dark-v10" type="radio" name="rtoggle" value="dark" />
+            <label for="dark">Dark</label>
+            <input id="outdoors-v11" type="radio" name="rtoggle" value="outdoors" />
+            <label for="outdoors">Outdoors</label>
+            <input id="satellite-v9" type="radio" name="rtoggle" value="satellite" />
+            <label for="satellite">Satellite</label>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="analysis" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Analysis</h2>
+          <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="data" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>The Data is Scraped From:</h2>
+          <p class="lead"><a href='https://www.mohfw.gov.in/'>Ministry of Health and Family Welfare</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>GitHub Repository:</h2>
+          <p class="lead"><a href='https://github.com/chaitanyaj14/COVID19LiveIndia.git'>Source Code</a></p>
+          <p class="lead"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Chaitanya Joshi 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoiY2hhaXRhbnlhajE0IiwiYSI6ImNrOGZvcXhhczA2azMzZm9pNGtrdm5mdDAifQ.8aubVdWvKEDeFPvBL_r4Eg';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    zoom: 3,
+    center: [78.9629, 20.5937]
+  });
+
+
+
+
+  var layerList = document.getElementById('menu');
+  var inputs = layerList.getElementsByTagName('input');
+
+  function switchLayer(layer) {
+    var layerId = layer.target.id;
+    map.setStyle('mapbox://styles/mapbox/' + layerId);
+  }
+
+  for (var i = 0; i < inputs.length; i++) {
+    inputs[i].onclick = switchLayer;
+  }
+
+
+</script>
+
+<script>
+  var dt = new Date();
+  document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script>
+
+<script src="index.js"></script>
+
+<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+</html>
